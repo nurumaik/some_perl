@@ -3,11 +3,11 @@ use 5.22.2;
 
 use Test::More tests => 9;
 
-use CamelCase qw/fromCamelCase/;
+use CamelCase qw/from_camel_case/;
 
 sub checkCC {
 	my ($input, $output) = @_;
-	is(CamelCase::fromCamelCase($input), $output);
+	is(CamelCase::from_camel_case($input), $output);
 }
 
 checkCC("camelCase", "camel_case");

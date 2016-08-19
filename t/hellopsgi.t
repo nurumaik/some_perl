@@ -3,10 +3,10 @@ use 5.22.2;
 
 use Test::More tests => 3;
 use Plack::Test;
-use HelloPSGI qw(helloWorldApp);
+use HelloPSGI qw(hello_world_app);
 
 test_psgi
-		app => helloWorldApp,
+		app => hello_world_app,
 		client => sub {
 				my $cb = shift;
 				my $req_resp = sub {

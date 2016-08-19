@@ -6,9 +6,9 @@ use 5.22.2;
 use GetFramework qw(build_app);
 
 use base 'Exporter';
-our @EXPORT_OK = qw(helloWorldApp);
+our @EXPORT_OK = qw(hello_world_app);
 
-sub helloWorldApp {
+sub hello_world_app {
 	my $app = build_app(
 			qr#^/hello_world#, sub {
 				return "Привет, мир!";
